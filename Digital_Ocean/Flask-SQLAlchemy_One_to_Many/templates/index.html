@@ -1,0 +1,42 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/css/style.css" type="text/css" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}">Big Mike's Blog! 🪶</a>
+        <a href="{{ url_for('comments') }}">Comments 💬</a>
+        <a href="{{ url_for('about') }}">About ❓</a>
+    </nav>
+    <main>
+        <section>
+            <h1 class="headline-h1">Posts! 📬</h1>
+            <br>
+            <div class="content">
+                {% for post in posts %}
+                <div class="post">
+                    <p><strong>Post # {{ post.id }} 📮 Created at: {{ post.created_at }} 🕑</strong></p>
+                    <strong><p class="title"><a href="{{ url_for('post', post_id=post.id) }}">{{ post.title }}</a></p></strong>
+                    <br>
+                    <div class="content">
+                        <p>{{ post.content }}</p>
+                    </div>
+                    <hr>
+                </div>
+                {% endfor %}
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
+

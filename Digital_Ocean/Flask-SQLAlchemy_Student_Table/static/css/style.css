@@ -1,0 +1,109 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin-top: 30px;
+}
+
+.headline-h1 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.headline-hr {
+    height: 6px;
+    color: black;
+    background-color: black;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    border: 5px solid black;
+}
+
+figcaption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    margin: 5px;
+}
+
+.content {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.student {
+    flex: 20%;
+    padding: 10px;
+    margin: 5px;
+    background-color: #f3f3f3;
+    inline-size: 100%;
+}
+
+.bio {
+    padding: 10px;
+    margin: 5px;
+    background-color: #ffffff;
+    color: #004835;
+}
+
+.name a {
+    color: #00a36f;
+    text-decoration: none;
+}
+
+nav {
+    background-color: rgb(231, 226, 231);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav a {
+    color: #d64161;
+    font-size: 2.5em;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.text-field {
+    font-size: 1.2em;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(224, 225, 228);
+    border: 2px solid black;
+    border-radius: .5em;
+}
+
+.button {
+    font-size: 1.2em;
+    background-color: rgb(228, 141, 224);
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: .5em;
+    width: 200px;
+}
+

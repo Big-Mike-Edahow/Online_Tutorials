@@ -1,0 +1,59 @@
+<!-- post.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/css/style.css" type="text/css" rel="stylesheet">
+    <title>Posts</title>
+</head>
+
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}">Big Mike's Blog! 🪶</a>
+        <a href="{{ url_for('comments') }}">Comments 💬</a>
+        <a href="{{ url_for('about') }}">About ❓</a>
+    </nav>
+    <main>
+        <section>
+            <span class="title">
+                <h1> {{ post.title }} </h1>
+            </span>
+            <div class="content">
+                <div class="post">
+                    <p><b>Post # {{ post.id }} 📫 Created at: {{ post.created_at }} 🕑</b></p>
+                    <b>
+                        <p class="title-decoration">{{ post.title }}</p>
+                    </b>
+                    <div class="content">
+                        <p>{{ post.content }}</p>
+                    </div>
+                    <hr>
+                    <h3>Comments</h3>
+                    <form method="post">
+                        <textarea class="text-field" name="content" placeholder="Comment" cols="60" rows="3"></textarea>
+                        <br>
+                        <button class="button" type="submit">Add comment</button>
+                    </form>
+                    {% for comment in post.comments %}
+                    <div class="comment">
+                        <h3> Comment # {{ comment.id }}</h3>
+                        <p> Created at: {{ comment.created_at }}</p>
+                        <br>
+                        <p>{{ comment.content }}</p>
+                        <form method="POST" action="{{ url_for('delete_comment', comment_id=comment.id) }}">
+                            <input class="delete-button" type="submit" value="Delete Comment"
+                                onclick="return confirm('Are you sure you want to delete this entry?')">
+                        </form>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
+

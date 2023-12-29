@@ -1,0 +1,82 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./static/css/style.css" type="text/css" rel="stylesheet">
+    <title>CSS Display Property</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1><strong><code>freeCodeCamp</code></strong> CSS Display Properties! 👨‍💻</h1>
+    </header>
+    <main>
+        <section class="hero-container">
+            <img src="./static/images/CSS_Display_Hero.png" alt="CSS Display" width="480px">
+            <br>
+        </section>
+        <section class="main-container">
+            <section id="grid-1">
+                <article>
+                    <h2>Inline</h2>
+                    <p>An element with a display property set to inline will not start on a new line and it will take up
+                        the
+                        remaining/available screen width. It just takes up the space such an element would normally
+                        take.</p><br>
+
+                    <p>Because of this, you can't set the width and height of an element that has a display of inline,
+                        becuase it does not take up the whole screen width.</p><br>
+
+                    <p>Some elements are inline by default, like <code>&lt;span&gt;, &lt;a&gt;, &lt;i&gt;,</code> and
+                        <code>&lt;img&gt;</code>.
+                    </p>
+                </article>
+                <article>
+                    <h2>Block</h2>
+                    <p>An element that has the display property set to block starts on a new line and takes up the
+                        available
+                        screen width.</p><br>
+
+                    <p>You can specify the width and height properties for such elements. Examples of elements that are
+                        at
+                        block-level by default are <code>&lt;div&gt;, &lt;section&gt;, &lt;p&gt;</code>, and lots more.
+                    </p><br>
+                </article>
+                <article>
+                    <h2>Inline-Block</h2>
+                    <p>Apart from block and inline display, there's also inline-block.</p><br>
+
+                    <p>An element you assign a display of inline-block to is inline by presentation. But it has the
+                        added
+                        advantage of you being able to apply width and height to it, which you can't do when the element
+                        is
+                        assigned a display of inline.</p><br>
+
+                    <p>So, you can look at the inline-block display as an inline element and block element in one
+                        package.</p>
+                </article>
+            </section>
+            <section id="grid-2">
+                <div id="inline">Inline</div>
+                <div id="block">Block</div>
+                <div id="inline-block"><span>Inline-Block</span><span>Inline-Block</span></div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright 2030 &copy; Mike Jackson</p>
+    </footer>
+</body>
+
+</html>

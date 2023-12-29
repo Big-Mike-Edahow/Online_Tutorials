@@ -1,0 +1,42 @@
+<!--student.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/css/style.css" type="text/css" rel="stylesheet">
+    <title>Student Info</title>
+</head>
+
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}">Flask-SQLAlchemy Student List! 🏫</a>
+        <a href="{{ url_for('create') }}">Add new student 🖊️</a>
+        <a href="{{ url_for('about') }}">About ❓</a>
+    </nav>
+    <main>
+        <section class="content">
+            <span class="title">
+                <h1>{% block title %} {{ student.firstname }} {{ student.lastname }}{% endblock %}</h1>
+            </span>
+            <div class="content">
+                    <div class="student">
+                        <p><strong>#{{ student.id }}</strong></p>
+                        <strong><p class="name">{{ student.firstname }} {{ student.lastname }}</p></strong>
+                        <p>{{ student.email }}</p>
+                        <p>{{ student.age }} years old.</p>
+                        <p>Joined: {{ student.created_at }}</p>
+                        <div class="bio">
+                            <h4>Bio</h4>
+                            <p>{{ student.bio }}</p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
+

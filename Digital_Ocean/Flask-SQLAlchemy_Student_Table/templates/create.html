@@ -1,0 +1,46 @@
+<!-- create.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/css/style.css" type="text/css" rel="stylesheet">
+    <title>Add new student</title>
+</head>
+
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}">Flask-SQLAlchemy Student List! 🏫</a>
+        <a href="{{ url_for('create') }}">Add new student 🖊️</a>
+        <a href="{{ url_for('about') }}">About ❓</a>
+    </nav>
+    <main>
+        <section class="center">
+            <h1 class="headline-h1">Add a New Student! 🖊️</h1>
+            <br>
+            <form method="post">
+                <label for="firstname">First Name</label>
+                <input class="text-field" type="text" name="firstname" placeholder="First name">
+                <br>
+                <label for="lastname">Last Name</label>
+                <input class="text-field"  type="text" name="lastname" placeholder="Last name">
+                <br>
+                <label for="email">Email</label>
+                <input class="text-field"  type="email" name="email" placeholder="Student email">
+                <br>
+                <label for="age">Age</label>
+                <input class="text-field"  type="number" name="age" placeholder="Age">
+                <br>
+                <label for="bio">Bio</label>
+                <br>
+                <textarea class="text-field" style="font-size: 1.2em;" name="bio" placeholder="Bio" rows="10" cols="60"></textarea>
+                <br><button class="button" type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
+

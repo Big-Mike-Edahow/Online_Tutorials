@@ -1,0 +1,69 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(118, 198, 230);
+}
+
+main {
+    margin: 30px;
+}
+
+article {
+    position: relative;
+    top: 20px;
+    margin: 15px auto 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+img {
+    border: 5px solid black;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.hero-container {
+    position: relative;
+    top: 50px;
+}
+
+#headline-h1 {
+    position: relative;
+    top: 20px;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+#headline-hr {
+    height: 6px;
+    color: black;
+    background-color: black;
+    width: 800px;
+}
+
+.main-container {
+    position: relative;
+    top: 30px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+

@@ -1,0 +1,37 @@
+<!-- comments.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/css/style.css" type="text/css" rel="stylesheet">
+    <title>Comments</title>
+</head>
+
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}">Big Mike's Blog! 🪶</a>
+        <a href="{{ url_for('comments') }}">Comments 💬</a>
+        <a href="{{ url_for('about') }}">About ❓</a>
+    </nav>
+    <main>
+        <section>
+            <h1>Latest Comments 💬</h1>
+            <div class="content">
+                {% for comment in comments %}
+                <div class="comment-box">
+                    <p><strong>On post # {{ comment.id }}<a href="{{ url_for('post', post_id=comment.post.id) }}"> {{ comment.post.title }}</a> 📫</strong></p>
+                    <p>Posted at: {{ comment.created_at }} 🕑</p>
+                    <br>
+                    <em><p>{{ comment.content }}</p></em>
+                </div>
+                {% endfor %}
+            </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

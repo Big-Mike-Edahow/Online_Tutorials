@@ -1,0 +1,81 @@
+/* style.css */
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(133, 234, 235);
+}
+
+main {
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#headline-h1 {
+    font-size: 3em;
+    font-style: bold;
+} 
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 125px 125px 125px;
+    grid-template-rows: 125px 125px 125px;
+    width: 375px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black;
+}
+
+.wrapper > div > p {
+    font-size: 2em;
+    font-style: bold;
+    margin: 5px;
+    padding: 5px;
+}
+
+.item-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgb(133, 133, 235);
+    border: 1px solid black;
+}
+
+.item-2 {
+    background-color: rgb(231, 176, 137);
+    border: 1px solid black;
+}
+
+.item-3 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: rgb(182, 233, 132);
+    border: 1px solid black;
+}
+
+.item-4 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: rgb(229, 141, 229);
+    border: 1px solid black;
+}
+
+.item-5 {
+    background-color: rgb(228, 135, 135);
+    border: 1px solid black;
+}
+
+.item-6 {
+    background-color: rgb(234, 224, 134);
+    border: 1px solid black;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+

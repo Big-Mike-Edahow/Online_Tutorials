@@ -1,0 +1,80 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./static/css/style.css" type="text/css" rel="stylesheet">
+    <title>Hello World!</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Hello World! 🌎</h1>
+    </header>
+    <main>
+        <section class="secondary-heading">
+            <h2><strong><em>CSS Position Property</em></strong></h2>
+            <br>
+            <hr>
+        </section>
+        <section class="container">
+            <article>
+                <h3><strong>Static</strong></h3>
+                <p>This is the default value for elements. The element is positioned according to the normal flow
+                    of the document. The left, right, top, bottom and z-index properties do not affect an element
+                    with position: static.</p>
+            </article>
+            <article>
+                <h3><strong>Relative</strong></h3>
+                <p>Elements with <code>position: relative</code> remain in the normal flow of the document. But, unlike
+                    static elements, the left, right, top, bottom and z-index properties affect the position of the element.
+                    An offset, based on the values of left, right, top and bottom properties, is applied to the
+                    element relative to itself.</p>
+            </article>
+            <article>
+                <h3><strong>Absolute</strong></h3>
+                <p>Elements with <code>position: absolute</code> are positioned relative to their parent elements. In
+                    this case, the element is removed from the normal document flow. The other elements will behave as
+                    if that element is not in the document. No space is created for the element in the page layout. The
+                    values of left, top, bottom and right determine the final position of the element.</p><br>
+                <p>One thing to note is that an element with position: absolute is positioned relative to its closest
+                    positioned ancestor. That means that the parent element has to have a position value other than
+                    <code>position: static</code>.
+                </p><br>
+                <p>If the closest parent element is not positioned, it is positioned relative to the next parent
+                    element that is positioned. If there's no positioned ancestor element, it is positioned relative
+                    to the html element.</p>
+            </article>
+            <article>
+                <h3><strong>Fixed</strong></h3>
+                <p>Fixed position elements are similar to absolutely positioned elements. They are also removed from
+                    the normal flow of the document. But unlike absolutely positioned element, they are always
+                    positioned relative to the html element.</p><br>
+                <p>One thing to note is that fixed elements are not affected by scrolling. They always stay in the same
+                    position on the screen.</p>
+            </article>
+            <article>
+                <h3><strong>Sticky</strong></h3>
+                <p><code>position: sticky</code> is a mix of <code>position: relative</code> and <code>position: fixed</code>.
+                    It acts like a relatively positioned element until a certain scroll point and then it acts like a
+                    fixed element.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2023 Mike Jackson</p>
+    </footer>
+</body>
+
+</html>
+

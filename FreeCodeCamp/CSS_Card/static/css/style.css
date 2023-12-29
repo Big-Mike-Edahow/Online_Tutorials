@@ -1,0 +1,80 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #eaeff1;
+    font-family: "Raleway", sans-serif;
+}
+
+main {
+    margin-top: 50px;
+}
+
+.card {
+    max-width: 300px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 8px;
+    border: 2px solid #bacdd8;
+    border-radius: .5em;
+    box-shadow: 0.5em 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.8);
+}
+
+.card__details {
+    padding: 16px 8px 8px 8px;
+}
+
+img {
+    width: 280px;
+    object-fit: cover;
+    border: none;
+    border-radius: .5em;
+}
+
+.tag {
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #9dc8e2;
+    color: black;
+    padding: 4px 8px;
+    border: 1px solid #13689e;
+    border-radius: 50px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 16px;
+}
+
+p {
+    font-size: 16px;
+    color: black;
+    line-height: 150%;
+}
+
+button {
+    display: block;
+    background-color:rgb(165, 189, 233);
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 auto;
+    padding: 12px 24px;
+    border: 1px solid blue;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:focus,
+button:hover {
+  background-color: #0077ff;
+  color: white;
+}
+
