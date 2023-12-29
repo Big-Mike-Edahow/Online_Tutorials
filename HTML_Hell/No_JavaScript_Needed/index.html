@@ -1,0 +1,59 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <title>HTML Hell-No JavaScript Needed</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <label>
+                <input type="checkbox">
+                My awesome feature
+            </label>
+        </section>
+        <section>
+            <input list="frameworks" />
+            <datalist id="frameworks">
+                <option>Bootstrap</option>
+                <option>Tailwind CSS</option>
+                <option>Foundation</option>
+                <option>Bulma</option>
+                <option>Skeleton</option>
+            </datalist>
+        </section>
+        <section>
+            <label> <input type="color" /> Color </label>
+        </section>
+        <section>
+            <details open>
+                <summary>My accordion</summary>
+                <p>My accordion content</p>
+            </details>
+        </section>
+        <section>
+            <dialog>
+                <form method="dialog">
+                    <h3>This is a pretty dialog</h3>
+                    <button type="submit">Close</button>
+                </form>
+            </dialog>
+            <dialog>
+                <form method="dialog">
+                  <p>Tabs or spaces?</p>
+                  <button type="submit" value="wrong">Tabs</button>
+                  <button type="submit" value="correct">Spaces</button>
+                </form>
+              </dialog>
+        </section>
+    </main>
+    <script src="./script.js" type="text/javascript"></script>
+</body>
+
+</html>
