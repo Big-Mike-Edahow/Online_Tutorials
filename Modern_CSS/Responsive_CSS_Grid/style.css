@@ -1,0 +1,61 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+main {
+    margin-top: 30px;
+}
+
+.grid-wrap {
+    padding: 2em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 2rem;
+
+    &+.grid {
+        margin-top: 2em;
+    }
+}
+
+span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 15vh;
+    background-color: rgb(165, 235, 165);
+    color: blue;
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+    border: 2px dashed currentcolor;
+    border-radius: 4px;
+}
+
+
+div:nth-child(2) span {
+    background-color: rgb(235, 188, 188);
+    color: purple;
+}
+
+div:nth-child(3) span {
+    background-color: rgb(191, 212, 234);
+    color: green;
+}
+
+div:nth-child(4) span {
+    background-color: rgb(234, 187, 233);
+    color: orangered;
+}
+

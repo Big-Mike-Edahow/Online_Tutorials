@@ -1,0 +1,68 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.flex-grid-wrap {
+    padding: 2rem;
+}
+
+.flex-grid {
+    display: flex;
+
+    &>* {
+        flex: 0 1 100%;
+
+        &:not(:first-child) {
+            margin-left: 2rem;
+        }
+    }
+
+    @media (max-width: (12rem * 3)) {
+        flex-wrap: wrap;
+
+        &>* {
+            margin: 2rem 0 0 !important;
+        }
+    }
+
+    @media (min-width: (12rem * 3)) {
+        &+.flex-grid {
+            margin-top: 2rem;
+        }
+    }
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Baloo 2", sans-serif;
+}
+
+span {
+    border: 2px dashed currentcolor;
+    border-radius: 4px;
+    min-height: 15vh;
+    padding: 1rem;
+    color: #0178d4;
+    font-size: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div:nth-child(2) span {
+    color: purple;
+}
+
+div:nth-child(3) span {
+    color: green;
+}
+
+div:nth-child(4) span {
+    color: orangered;
+}

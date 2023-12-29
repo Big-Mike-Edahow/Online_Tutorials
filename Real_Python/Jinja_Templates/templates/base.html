@@ -1,0 +1,30 @@
+<!-- base.html -->
+
+{% import "macros.html" as macros %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='css/style.css') }}" 
+    type="text/css" rel="stylesheet">
+    <title>{% block title %}{{ title }}{% endblock title %}</title>
+</head>
+
+<body>
+    <header>
+        {% include "_navigation.html" %}
+    </header>
+
+    {% block content %}
+    <h1>Welcome to {{ title }}!</h1>
+    {% endblock content %}
+
+    <footer>
+        {{ macros.light_or_dark_mode("body") }}
+    </footer>
+</body>
+
+</html>
