@@ -1,0 +1,64 @@
+/* mod_style.css */
+
+#demo,
+#demoMod {
+  margin-inline: auto;
+  font-size: calc(4vmin + 1rem);
+  width: 40vmin;
+  height: 40vmin;
+  border: 1.2vmin solid hsl(343 100% 50%);
+  border-right-color: hsl(173 100% 50%);
+  border-bottom-color: hsl(43 100% 50%);
+  border-left-color: hsl(283 100% 50%);
+  background-color: hsl(343 100% 50% / 0.12);
+  rotate: rem(calc(var(--a, 30) * 1deg), (var(--b, 5) * 1deg));
+
+  display: grid;
+  place-items: center;
+  font-family: system-ui, sans-serif;
+  z-index: -1;
+}
+#demoMod {
+  rotate: mod(calc(var(--a, 30) * 1deg), (var(--b, 5) * 1deg));
+}
+code {
+  margin: auto;
+  font-size: calc(1vmin + 1rem);
+  text-align: right;
+  line-height: 1.6;
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: system-ui, sans-serif;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+select {
+  font-size: 1rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background: #16161c;
+  color: #fbfbf8;
+  padding: 0.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+#main-section {
+  display: flex;
+  margin-top: 50px;
+}
+

@@ -1,0 +1,145 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(205, 161, 228);
+}
+
+nav {
+    width: 100%;
+    border: 2px solid black;
+}
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: blue;
+    display: table;
+    width: 100%;
+}
+
+nav > ul > li {
+    display: table-cell
+}
+
+nav > ul > li > a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+nav > ul > li > a:hover {
+    background-color: #111;
+}
+
+main {
+    position: relative;
+    margin-top: 30px;
+}
+
+.hero-container {
+    position: relative;
+    top: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-images {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+.hero-images img {
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid blue;
+}
+
+#headline-h1 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+#headline-hr {
+    height: 6px;
+    color: black;
+    background-color: black;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-container {
+    position: relative;
+    top: 30px;
+}
+
+.flex_direction_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    gap: 25px;
+}
+
+.flex_direction_row-reverse {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 25px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(145, 228, 145);
+    border: 2px solid black;
+    padding: 5px;
+    font-size: 64px;
+    width: 140px;
+    height: 140px;
+}
+
+footer {
+    position: relative;
+    top:75px;
+    width: 100%;
+    background-color: blue;
+    padding: 5px;
+    border: 2px solid black;
+    margin-bottom: 0;
+}
+
+footer > p {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+

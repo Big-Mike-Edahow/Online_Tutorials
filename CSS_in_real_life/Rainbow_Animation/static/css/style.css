@@ -1,0 +1,80 @@
+/* style.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(233, 169, 169);
+}
+
+main {
+    margin-top: 30px;
+}
+
+#headline-h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+hr {
+    width: 800px;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@property --maskStart {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: -90deg;
+}
+
+@property --maskEnd {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 360deg;
+}
+
+.container {
+    --bg: rgba(10, 12, 20, 1);
+    --size: clamp(200px, 20vw, 500px);
+    --start: 20%;
+    --w: calc(80% / 20);
+    --top: conic-gradient(from var(--maskStart, 90deg) at center, var(--bg) var(--maskEnd, 180deg), transparent 0);
+    --rainbow: radial-gradient(circle at center,
+            transparent var(--start),
+            violet 0, violet calc(var(--start) + var(--w)),
+            indigo 0, indigo calc(var(--start) + (var(--w) * 2)),
+            blue 0, blue calc(var(--start) + (var(--w) * 3)),
+            green 0, green calc(var(--start) + (var(--w) * 4)),
+            yellow 0, yellow calc(var(--start) + (var(--w) * 5)),
+            orange 0, orange calc(var(--start) + (var(--w) * 6)),
+            red 0, red calc(var(--start) + (var(--w) * 7)),
+            transparent 0);
+    margin: 10px auto;
+    height: 400px;
+    width: 700px;
+    border: 5px solid lightseagreen;
+    background: var(--top), var(--rainbow), var(--bg);
+    background-size: var(--size) calc(var(--size) * 0.55);
+    background-position: center 5vh;
+    animation: draw 1800ms forwards infinite cubic-bezier(.33, .19, .32, 1);
+}
+
+@keyframes draw {
+    40% {
+        --maskStart: 90deg;
+        --maskEnd: 180deg;
+    }
+
+    80% {
+        --maskStart: 90deg;
+        --maskEnd: 360deg;
+    }
+}
+

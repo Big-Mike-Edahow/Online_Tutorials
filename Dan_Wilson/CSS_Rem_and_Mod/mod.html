@@ -1,0 +1,39 @@
+<!-- mod.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./static/css/mod_style.css" type="text/css" rel="stylesheet">
+    <title>CSS mod()</title>
+</head>
+
+<body>
+    <main>
+        <section id="main-section">
+            <div id="demo">rotate</div>
+            <div id="demoMod">rotate</div>
+        </section>
+        <br>
+        <section>
+            <code>rem(<output for="a">30</output>deg, <output for="b">5</output>deg) = <span id="result">1</span></code>
+            <code>mod(<output for="aMod">30</output>deg, <output for="bMod">5</output>deg) = <span id="resultMod">1</span></code>
+            <form>
+                <div>
+                    <label for="a">Dividend</label>
+                    <input id="a" type="range" min="-400" value="30" max="400" step="1" />
+                </div>
+                <div>
+                    <label for="b">Divisor</label>
+                    <input id="b" type="range" min="-30" value="5" max="30" step="1" />
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="./static/javascript/mod_script.js" type="text/javascript"></script>
+</body>
+
+</html>
+

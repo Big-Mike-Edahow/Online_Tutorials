@@ -1,0 +1,54 @@
+/* style.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(228, 209, 148);
+}
+
+main {
+    margin-top: 30px;
+}
+
+#headline-h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+hr {
+    width: 800px;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    --stop1: clamp(1rem, 1vw, 4rem);
+    --stop2: clamp(2rem, 2vw, 8rem);
+    --size: calc(var(--stop1) * 3);
+    /*  --angle1: -45deg;
+  --angle2: 45deg; */
+    --grad1: linear-gradient(var(--angle1, 90deg), transparent var(--stop1), orangered 0, darkred var(--stop2), transparent 0);
+    --grad2: linear-gradient(var(--angle2, 180deg), transparent var(--stop1), orange 0, orangered var(--stop2), transparent 0);
+    margin: 10px auto;
+    height: 400px;
+    width: 700px;
+    border: 5px solid black;
+    background:
+        var(--grad1),
+        var(--grad2),
+        var(--grad1),
+        radial-gradient(circle at 0 0, turquoise, teal);
+    background-size:
+        calc(var(--size) * 2) var(--size),
+        var(--size) var(--size),
+        var(--size) var(--size),
+        calc(var(--size) * 2) calc(var(--size) * 2);
+}
+

@@ -1,0 +1,71 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition-property: color, background-color, border-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+:root {
+    --primaryColor: #0c9f9f;
+    --secondaryColor: #043535;
+    --backgroundColor: #eeeeee;
+}
+
+:root.dark-theme {
+    --primaryColor: #47c519;
+    --secondaryColor: #0c2404;
+    --backgroundColor: #111111;
+}
+
+body {
+    background-color: var(--backgroundColor);
+}
+
+main {
+    margin-top: 50px;
+}
+
+.headline-h1 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: rgb(243, 208, 8)
+}
+
+h1 {
+    font-size: 2.5em;
+    color: var(--primaryColor);
+}
+
+button {
+    font-size: 2rem;
+    padding: 0.5em 1em;
+
+    color: var(--primaryColor);
+    background-color: var(--secondaryColor);
+    border: 2px solid var(--primaryColor);
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+      /* Configuration for light theme */
+    }
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      /* Configuration for dark theme */
+    }
+  }
+
+  

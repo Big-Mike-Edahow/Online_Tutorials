@@ -1,0 +1,94 @@
+/* style.css */
+
+/* Presentational styles */
+body {
+    background: linear-gradient(90deg, rgb(134, 134, 225), rgb(109, 226, 109));
+}
+
+main {
+    margin-top: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+h2 {
+    background-color: rgb(200, 132, 234);
+    border: 2px solid black;
+    border-radius: .5em;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+h3 {
+    font-size: 3em;
+    font-weight: 700;
+    color: white;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.box-1 {
+    --mask: linear-gradient(#000 0 0) center/calc(100% - 60px) calc(100% - 60px) no-repeat,
+        conic-gradient(from 135deg at top, #0000, #000 1deg 89deg, #0000 90deg) 0 0/60px 30px space no-repeat,
+        conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 0 100%/60px 30px space no-repeat,
+        conic-gradient(from 45deg at left, #0000, #000 1deg 89deg, #0000 90deg) 0 0/30px 60px no-repeat space,
+        conic-gradient(from -135deg at right, #0000, #000 1deg 89deg, #0000 90deg) 100% 0/30px 60px no-repeat space;
+
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    aspect-ratio: 1;
+    
+    background: linear-gradient(135deg,
+            #1f005c,
+            #5b0060,
+            #870160,
+            #ac255e,
+            #ca485c,
+            #e16b5c,
+            #f39060,
+            #ffb56b);
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+}
+
+
+.box-1 h3 {
+    padding: 150px 0;
+
+}
+
+.box-2 {
+    --mask: 
+      linear-gradient(#000 0 0) 50%/calc(100% - 46.25px) calc(100% - 46.25px) no-repeat,
+      radial-gradient(farthest-side,#000 98%,#0000) 0 0/50px 50px round;
+
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    aspect-ratio: 1;
+    background: linear-gradient(135deg,#1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
+    -webkit-mask: var(--mask);
+        mask: var(--mask);
+    
+  }
+
+.box-2 h3 {
+    position: relative;
+    top: 25px;
+    margin-top: 55px;
+    padding: 120px 0 0 0;
+}
+
