@@ -1,0 +1,97 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./static/css/style.css" type="text/css" rel="stylesheet">
+    <title>CSS Style Container Queries</title>
+</head>
+
+<body>
+    <main>
+        <section class="center">
+            <h1>Blackfoot, Idaho Weather ⛅</h1>
+            <br><hr><br>
+        </section>
+        <section>
+            <ul class="card-list">
+                <li class="card-container" style="--cloudy: true;">
+                    <div class="weather-card">
+                        <div class="day">Monday</div>
+                        <div class="date">Dec <span>25th</span></div>
+                        <div class="temps">
+                            <div class="high">High: <span>26</span></div>/
+                            <div class="low">Low: <span>8</span></div>
+                        </div>
+                        <br>
+                        <div class="features">
+                            Partly cloudy skies. Winds light and variable.
+                        </div>
+                    </div>
+                </li>
+                <li class="card-container" style="--sunny: true;">
+                    <div class="weather-card">
+                        <div class="day">Tuesday</div>
+                        <div class="date">Dec <span>26th</span></div>
+                        <div class="temps">
+                            <div class="high">High: <span>26</span></div>/
+                            <div class="low">Low: <span>17</span></div>
+                        </div>
+                        <br>
+                        <div class="features">
+                            Mostly sunny. Winds light and variable.
+                        </div>
+                    </div>
+                </li>
+                <li class="card-container" style="--cloudy: true;">
+                    <div class="weather-card">
+                        <div class="day">Wednesday</div>
+                        <div class="date">Dec <span>27th</span></div>
+                        <div class="temps">
+                            <div class="high">High: <span>32</span></div>/
+                            <div class="low">Low: <span>21</span></div>
+                        </div>
+                        <br>
+                        <div class="features">
+                            Partly cloudy. Winds NNe at 5 to 10mph.
+                        </div>
+                    </div>
+                </li>
+                <li class="card-container" style="--cloudy: true;">
+                    <div class="weather-card">
+                        <div class="day">Thursday</div>
+                        <div class="date">Dec <span>28th</span></div>
+                        <div class="temps">
+                            <div class="high">High: <span>37</span></div>/
+                            <div class="low">Low: <span>18</span></div>
+                        </div>
+                        <br>
+                        <div class="features">
+                            Partly to mostly cloudy. Winds light and variable.
+                        </div>
+                    </div>
+                </li>
+                <li class="card-container" style="--sunny: true;--cloudy: true;">
+                    <div class="weather-card">
+                        <div class="day">Friday</div>
+                        <div class="date">Dec <span>29th</span></div>
+                        <div class="temps">
+                            <div class="high">High: <span>37</span></div>/
+                            <div class="low">Low: <span>20</span></div>
+                        </div>
+                        <br>
+                        <div class="features">
+                            Sunshine and clouds, mixed. Winds NNe at 5 to 10mph.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
+
