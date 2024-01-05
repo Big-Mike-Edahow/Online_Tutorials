@@ -7,9 +7,7 @@
     font-family: sans-serif;
 }
 
-body {
-    background-color: #edf756
-}
+
 
 header {
     display: flex;
@@ -26,9 +24,24 @@ main {
     padding: 10px;
 }
 
+body {
+    background-color: #edf756
+}
+
+
 .container {
     display: flex;
     flex: 100%;
+}
+
+.main {
+    display: flex;
+    flex: 90%;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    gap: 10px;
 }
 
 .sidebar {
@@ -38,6 +51,15 @@ main {
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+
+
 
 .sidebar a {
     font-size: 1.2em;
@@ -52,15 +74,6 @@ main {
     background-color: aquamarine;
 }
 
-.main {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    justify-items: center;
-    gap: 10px;
-}
-
 footer {
     display: flex;
     flex: 100%;
@@ -72,8 +85,3 @@ footer {
     color: black;
 }
 
-@media (max-width: 600px) {
-    .container {
-        flex-direction: column;
-    }
-}
