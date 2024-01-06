@@ -1,0 +1,152 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(233, 189, 171);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    background-color: rgb(179, 201, 230);
+    border-bottom: 2px solid black;
+}
+
+header>h1 {
+    display: flex;
+    flex: 50%;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 3em;
+    font-weight: 600;
+    color: black;
+    padding: 5px;
+}
+
+header>nav {
+    display: flex;
+    flex: 50%;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+header>nav>a {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+header>nav>a:hover {
+    background-color: black;
+    color: white;
+}
+
+.hero-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    font-weight: 700;
+    margin: 0;
+    padding: 15px;
+    background-color: rgb(143, 232, 228);
+    border-bottom: 2px solid black;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+    padding: 30px;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #f0400b;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+th {
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1.2em;
+    max-width: 43.75rem;
+    margin: 5px;
+    padding: 5px;
+    color: black;
+}
+
+td {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 3px;
+    padding: 3px;
+    background-color: ghostwhite;
+    color: rgb(3, 35, 35);
+    border: 1px solid black;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 600px) {
+    header {
+        grid-template-columns: 100%;
+        height: auto;
+    }
+
+    header>h1 {
+        flex: 100%;
+        font-size: 2em;
+    }
+
+    header>nav {
+        flex: 100%;
+        flex-flow: column wrap;
+    }
+
+    table {
+        max-width: 400px;
+    }
+
+    th {
+        font-size: 1em;
+        margin: 1px;
+        padding: 1px;
+    }
+
+    td {
+        font-size: 1em;
+        margin: 1px;
+        padding: 1px;
+    }
+}
+
